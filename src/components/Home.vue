@@ -29,7 +29,7 @@
               <template slot="title">
                 <!-- 图标 -->
                 <i :class="iconsObj[item.id]"></i>
-                <span>{{item.path}}</span>
+                <span>{{item.authName}}</span>
               </template>
                 <!-- 二级 -->
               <el-menu-item :index="'/' + subItem.path" v-for="subItem in item.children" 
@@ -39,7 +39,7 @@
               <template slot="title">
                 <!-- 图标 -->
                 <i class="el-icon-menu"></i>
-                <span>{{subItem.path}}</span>
+                <span>{{subItem.authName}}</span>
               </template> 
               </el-menu-item>
               </el-submenu>
